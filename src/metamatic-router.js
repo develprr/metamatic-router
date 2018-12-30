@@ -4,8 +4,11 @@ Author: Heikki Kupiainen / Metamatic.net
 License: Apache 2.0
 */
 
-import {updateStore} from '@metamatic.net/metamatic-core';
-import {connectToState} from '../index';
+import {updateStore, connectToState, disconnectFromStores} from '@metamatic.net/metamatic-core';
+
+const getBrowserPath = () => window.location.pathname;
+
+const getViewPath = () => getBrowserPath().replace(getBasePath(), '');
 
 export const STORE_ROUTER = 'STORE_ROUTER';
 
@@ -38,9 +41,7 @@ export const connectToRouter = (listener, callback) => {
   connectToState(listener, STORE_ROUTER, 'viewPath', callback);
 }
 
-const getBrowserPath = () => window.location.pathname;
-
-const getViewPath = () => getBrowserPath().replace(getBasePath(), '');
+export const disconnectFromRouter = (listener) => disconnectFromStores(listener);
 
 export const matchRoute = (pattern, component) => getBrowserPath().match(pattern) && component;
 
