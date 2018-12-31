@@ -4,7 +4,7 @@ Author: Heikki Kupiainen / Metamatic.net
 License: Apache 2.0
 */
 
-import {updateStore, connectToState, disconnectFromStores} from 'metamatic';
+import {updateStore, connectToState, disconnectFromStores} from '@metamatic.net/metamatic-core';
 
 const getBrowserPath = () => window.location.pathname;
 
