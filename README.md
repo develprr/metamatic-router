@@ -19,7 +19,7 @@ A router extension to Metamatic state management framework.
 
 ## Introduction
 
-The Metamatic Router is a simple router component installed on top of the core (Metamatic State Manager)[https://www.npmjs.com/package/metamatic] framework.
+The Metamatic Router is a simple router component installed on top of the core [Metamatic State Manager](https://www.npmjs.com/package/metamatic) framework.
 
 When you use Metamatic state manager framework you can use any router library available around the Internet. But some of those solutions require you to wrap
 your app's root component with some clumpy "Routing Provider" components before you can implement routing. Or if you want to programmatically soft-redirect
@@ -141,4 +141,4 @@ Apache 2.0
 [Heikki Kupiainen](https://www.linkedin.com/in/heikki-kupiainen) / [metamatic.net](http://www.metamatic.net)
 
 
-*[<- Back to contents](#chapters)*
+*[<- Back to contents](#contents)*
