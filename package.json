@@ -1,6 +1,6 @@
 {
   "name": "@metamatic.net/metamatic-router",
-  "version": "2.5.4",
+  "version": "2.5.5",
   "description": "Metamatic Router is an extension to Metamatic core framework providing support for routing.",
   "main": "index.js",
   "scripts": {
