@@ -1,6 +1,6 @@
-# The Metamatic Router
+# The Metamatic™ Router
 
-A router extension to Metamatic state management framework.
+A router extension to Metamatic™ state management framework.
 
 ## Contents
 * [Introduction](#introduction)
@@ -19,15 +19,15 @@ A router extension to Metamatic state management framework.
 
 ## Introduction
 
-The Metamatic Router is a simple router component installed on top of the core [Metamatic State Manager](https://www.npmjs.com/package/metamatic) framework.
+The Metamatic™ Router is a simple router component installed on top of the core [Metamatic™ State Manager](https://www.npmjs.com/package/metamatic) framework.
 
-When you use Metamatic state manager framework you can use any router library available around the Internet. But some of those solutions require you to wrap
-your app's root component with some clumpy "Routing Provider" components before you can implement routing. Or if you want to programmatically soft-redirect
+When you use Metamatic™ State Manager framework you can use any router library available around the Internet. But some of those solutions require you to wrap
+your app's root component with some clumpy "Router" tags before you can implement routing. Or if you want to programmatically soft-redirect
 your app to a certain sub-url then you may need to wrap your redirecting component inside some obscure wrapper again, possibly breaking your code's 
 otherwise sleek and clean syntax. 
 
-For this reason, Metamatic provides a simple out-of-the-box routing feature. It may be a viable alternative to some external routing libraries. This depends of course
-on your use case.
+For this reason, Metamatic Systems Ltd provides a simple out-of-the-box routing library. It may be a viable alternative to some external routing libraries. 
+This depends of course on your use case.
 
 *[<- Back to contents](#contents)*
 
@@ -35,7 +35,7 @@ on your use case.
 
 ### Connecting to Router
 
-To use Metamatic routing feature in your app, subscribe your main component to listen for URL changes with
+To use Metamatic™ Router in your app, subscribe your main component to listen for URL changes with
  **connectToRouter** function: 
 
 ```js
@@ -45,7 +45,6 @@ componentDidMount = () => connectToRouter(
 );
 ```
 
-
 The code snippet above causes the connected component to retrieve the updated URL from Metamatic when the URL changes. Then 
 the listener component is re-endered causing the main component show a different set of components based on that URL.
 
@@ -54,7 +53,7 @@ The code snippet above causes the main component to re-render itself every time 
 ### Disconnecting from Router
 
 Any component that has a de-facto life cycle, meaning it will removed, deactivated or unmounted during the application's run-time, 
-should be disconnected from the router upon unmount event. To disconnect a React component from the Metamatic router can be done 
+should be disconnected from the router upon unmount event. To disconnect a React component from Metamatic™ Router can be done 
 with **disconnectFromRouter** function:
 
 ```js
@@ -109,7 +108,7 @@ componentDidMount = () => connectToRouter(
 
 When you deploy your app to some sub-folder of your domain instead of domain's root, you must define the sub-path invoking **configureBaseRoute** function  
 at some early point of your app.
-For example, I want to place my router demo app in sub folder 'router' of Metamatic demo domain [https://metamatic-demo.herokuapp.com/router/](https://metamatic-demo.herokuapp.com/router/):
+For example, I want to place my router demo app in sub folder 'router' of demo domain [https://metamatic-demo.herokuapp.com/router/](https://metamatic-demo.herokuapp.com/router/):
 
 ```js
 configureBaseRoute('/router');
@@ -125,7 +124,7 @@ Whenever you want your app to programmatically redirect to some view defined in 
 onClick = () => redirectTo(someUrlPath);
 ```
 
-To see a complete example of using the Metamatic routing feature in action, please check out [The Metamatic Router Demo](https://github.com/develprr/metamatic-router-demo) on GitHub.
+To see a complete example of using routing feature in action, please check out [The Router Demo](https://github.com/develprr/metamatic-router-demo) on GitHub.
 
 *[<- Back to contents](#contents)*
 
